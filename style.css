@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:700,300);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+body {
+  background-color: #fff;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;  
+  color: #446CB3;
+  margin: 0px 5px;
+}
+
+.container {
+  height: 484px;
+  width: 690px;
+  background-color: #FBFAF6;
+}
+
+.credit {
+  font-family: 'Kanit', sans-serif;  
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.5em;
+  margin: 20px 0px;
+}
+
+.text {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  width: 680px;
+  margin: 25px 0px;
+}
+
+.text::first-letter {
+  font-family: 'Kanit', sans-serif;
+  font-size: 6em;
+  font-weight: 700;
+  float: left;  
+  line-height: 80px; 
+  padding: 20px 10px 0px 0px;
+}
+
+#one {
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin: 50px;
+ z-index: 3;
+ animation: one 1s infinite alternate ease-in-out;
+}
+
+#two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  z-index: 2;
+}
+
+#three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  z-index: 1;
+  animation: three 3s infinite alternate ease-in-out;
+}
+
+@keyframes one {
+  0% { transform: scale(.99); }
+  100% { transform: scale(1); }
+}
+
+@keyframes three {
+  0% { transform: translateY(2px); }
+  100% { transform: translateY(-2px); }
+}
